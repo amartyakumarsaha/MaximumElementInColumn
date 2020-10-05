@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define ROW 3
 #define COLUMN 3
-void minimumIncolumn();
+void maximumIncolumn();
 int main(void)
 {
 	int matrix1[ROW][COLUMN],matrix2[ROW][COLUMN],i,j;
@@ -23,10 +23,10 @@ int main(void)
 		}
 		printf("\n");
 	}
-	minimumIncolumn(matrix1);
+	maximumIncolumn(matrix1);
 	return 0;
 }
-void minimumIncolumn(int matrix1[][COLUMN])
+void maximumIncolumn(int matrix1[][COLUMN])
 {
 	int i,j,max;
 	for(j=0;j<COLUMN;j++)
